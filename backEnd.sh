@@ -1,5 +1,10 @@
 source /home/ec2-user/repos/autoMate_instalation/common.sh
 
+if [ -z "$1" ];then
+  echo "Enter the password for MySQL Backend Server"
+  exit 1
+fi
+
 cp /home/ec2-user/repos/autoMate_instalation/backend.service /etc/systemd/system/backend.service
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
