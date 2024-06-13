@@ -16,7 +16,7 @@ id expense &>>/tmp/expense.log
 STAT $?
 mkdir /app
 
-HEADING "Downloading app code from Server"
+HEADING "Downloading app code from Server "
 curl -o /tmp/backend.zip https://expense-artifacts.s3.amazonaws.com/expense-backend-v2.zip
 STAT $?
 
