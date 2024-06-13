@@ -1,4 +1,4 @@
-source common.sh
+source /home/ec2-user/repos/autoMate_instalation/common.sh
 
 
 HEADING Installing nginx Server
@@ -15,7 +15,7 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 HEADING Copying configuration file
-cp expense.conf /etc/nginx/default.d/expense.conf
+cp /home/ec2-user/repos/autoMate_instalation/expense.conf /etc/nginx/default.d/expense.conf
 
 systemctl enable nginx
 
