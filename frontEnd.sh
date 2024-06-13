@@ -1,4 +1,4 @@
-source common.sh
+source /home/ec2-user/repos/autoMate_instalation/common.sh
 
 
 HEADING Installing nginx Server
