@@ -1,4 +1,4 @@
-source /home/ec2-user/repos/autoMate_instalation/common
+source /home/ec2-user/repos/autoMate_instalation/common.sh
 
 cp /home/ec2-user/repos/autoMate_instalation/backend.service /etc/systemd/system/backend.service
 dnf module disable nodejs -y
