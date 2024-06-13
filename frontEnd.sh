@@ -1,7 +1,9 @@
 source common.sh
+
+
 HEADING Installing nginx Server
 dnf install nginx -y
-echo exit status - $?
+STAT $?
 
 HEADING Removing old content
 rm -rf /usr/share/nginx/html/*
@@ -18,4 +20,4 @@ cp expense.conf /etc/nginx/default.d/expense.conf
 systemctl enable nginx
 
 systemctl restart nginx
-echo exit status - $?
+STAT $?
