@@ -1,4 +1,4 @@
-source common.sh
+source /home/ec2-user/repos/autoMate_instalation/common.sh
 rm -f /tmp/expense.log
 
 if [ -z "$1" ];then

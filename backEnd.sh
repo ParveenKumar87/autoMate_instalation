@@ -1,6 +1,6 @@
-source common
+source /home/ec2-user/repos/autoMate_instalation/common
 
-cp backend.service /etc/systemd/system/backend.service
+cp /home/ec2-user/repos/autoMate_instalation/backend.service /etc/systemd/system/backend.service
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
 
