@@ -30,5 +30,5 @@ systemctl start backend
 
 HEADING "Installing MySQL client"
 dnf install mysql -y
-mysql -h 23.22.204.199 -uroot -p$1 < /app/schema/backend.sql
+mysql -h 44.201.233.84 -uroot -p$1 < /app/schema/backend.sql
 STAT $?
