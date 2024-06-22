@@ -1,0 +1,22 @@
+- name: MySQL Server Playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Set_Prompt shell
+      ansible.builtin.shell:
+        set-prompt MySQL Server
+
+    - name: Installing MySQL Server
+      ansible.builtin.dnf:
+        - name: mysql-server
+          state: present
+
+    - name: Start MySql Service
+      ansible.builtin.systemd_service:
+        state: restarted
+        name: mysqld
+        enabled: true
+
+    - name: Set Root Password
+      ansible.builtin.shell:
+        mysql_secure_installation --set-root-pass ExpenseApp@1
