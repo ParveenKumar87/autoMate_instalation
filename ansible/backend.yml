@@ -52,7 +52,7 @@
       ansible.builtin.dnf:
         name:
         - mysql
-        - python3-PymySQL
+        - python3-PyMySQL
         state: present
 
     - name: Load schema
@@ -62,7 +62,7 @@
         target: /app/schema/backend.sql
         login_user: root
         login_password: ExpenseApp@1
-        login_host: 34.203.238.209
+        login_host: 172.31.47.141
 
     - name: start backend Service
       ansible.builtin.systemd_service:
