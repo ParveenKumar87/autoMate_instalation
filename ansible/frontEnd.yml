@@ -1,5 +1,5 @@
 - name: frontEnd Playbook
-  hosts: all
+  hosts: localhost
   become: true
   tasks:
     - name: Set_Prompt shell
