@@ -8,7 +8,7 @@
 
     - name: Installing MySQL Server
       ansible.builtin.dnf:
-        - name: mysql-server
+          name: mysql-server
           state: present
 
     - name: Start MySql Service

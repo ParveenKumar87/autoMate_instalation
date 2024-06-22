@@ -62,7 +62,7 @@
         target: /app/schema/backend.sql
         login_user: root
         login_password: ExpenseApp@1
-        login_host:
+        login_host: db_ip
 
     - name: start backend Service
       ansible.builtin.systemd_service:
